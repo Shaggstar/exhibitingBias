@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "074e839941d80f23",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce0e448729c4d3ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c9ef0a8e892b4cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/poetry/Tie Raid.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tie Raid"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c6ba21aadc54a39b",
+    "type": "split",
+    "children": [
+      {
+        "id": "65065ae5ffa33db5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06dda9ff444ad7e5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c77d8537ea854d6e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "31fd6213eaee014f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "b2ae68c249f1ae33",
+    "type": "split",
+    "children": [
+      {
+        "id": "009362fea9066654",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4775b9a70e6eb699",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/content/poetry/Tie Raid.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Tie Raid"
+            }
+          },
+          {
+            "id": "9fa6cf7cde4c4155",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/content/poetry/Tie Raid.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Tie Raid"
+            }
+          },
+          {
+            "id": "3b33ac4a4bb69bdf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b7c712e2e15fb966",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/content/poetry/Tie Raid.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Tie Raid"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6c9ef0a8e892b4cb",
+  "lastOpenFiles": [
+    "node_modules/tar/README.md",
+    "node_modules/@tailwindcss/oxide-darwin-x64/LICENSE",
+    "node_modules/jiti/README.md",
+    "node_modules/jiti/package.json",
+    "node_modules/jiti/lib/types.d.ts",
+    "node_modules/jiti/lib/jiti.mjs",
+    "node_modules/jiti/lib/jiti.d.mts",
+    "node_modules/jiti/lib/jiti.d.cts",
+    "node_modules/jiti/lib/jiti.cjs",
+    "node_modules/jiti/lib/jiti-register.mjs",
+    "node_modules/jiti/lib/jiti-register.d.mts",
+    "node_modules/jiti/lib/jiti-native.mjs",
+    "node_modules/enhanced-resolve/README.md",
+    "node_modules/magic-string/README.md",
+    "node_modules/lightningcss/README.md",
+    "node_modules/@jridgewell/remapping/README.md",
+    "node_modules/tapable/README.md",
+    "node_modules/@isaacs/fs-minipass/README.md",
+    "node_modules/minizlib/README.md",
+    "node_modules/tar/node_modules/yallist/LICENSE.md",
+    "node_modules/minipass/README.md",
+    "node_modules/tar/node_modules/yallist/README.md",
+    "node_modules/detect-libc/README.md",
+    "node_modules/@tailwindcss/node/README.md",
+    "node_modules/chownr/README.md",
+    "node_modules/chownr/LICENSE.md",
+    "node_modules/lightningcss-darwin-x64/README.md",
+    "node_modules/@tailwindcss/postcss/README.md",
+    "node_modules/@tailwindcss/oxide-darwin-x64/README.md",
+    "node_modules/@alloc/quick-lru/readme.md",
+    "node_modules/autoprefixer/README.md",
+    "node_modules/tailwindcss/README.md",
+    "node_modules/fraction.js/README.md",
+    "node_modules/postcss-value-parser/README.md",
+    "node_modules/normalize-range/readme.md",
+    "node_modules/fsevents/README.md"
+  ]
+}
