@@ -2,7 +2,8 @@ import matter from "gray-matter";
 
 // Grab ALL markdown files under /src/content/** as raw text:
 const files = import.meta.glob("../content/**/*.{md,markdown,mdx}", {
-  as: "raw",
+  query: "?raw",
+  import: "default",
   eager: true,
 });
 

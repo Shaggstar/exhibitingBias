@@ -148,9 +148,35 @@ const MOHAtlasVisual = () => (
 );
 
 export default function App() {
-  const index = useMemo(() => getMarkdownIndex(), []);
-  const poetryItems = useMemo(() => filterBySection(index, "poetry"), [index]);
-  const essayItems = useMemo(() => filterBySection(index, "essays"), [index]);
+  const [markdownError, setMarkdownError] = useState(null);
+  
+  const index = useMemo(() => {
+    try {
+      return getMarkdownIndex();
+    } catch (error) {
+      console.error('Error loading markdown index:', error);
+      setMarkdownError(error.message);
+      return [];
+    }
+  }, []);
+  
+  const poetryItems = useMemo(() => {
+    try {
+      return filterBySection(index, "poetry");
+    } catch (error) {
+      console.error('Error filtering poetry items:', error);
+      return [];
+    }
+  }, [index]);
+  
+  const essayItems = useMemo(() => {
+    try {
+      return filterBySection(index, "essays");
+    } catch (error) {
+      console.error('Error filtering essay items:', error);
+      return [];
+    }
+  }, [index]);
 
   return (
     <div 
@@ -311,9 +337,20 @@ export default function App() {
           {/* No content message */}
           {essayItems.length === 0 && poetryItems.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-[color:var(--subtext)]">
-                No writings available at the moment.
-              </p>
+              {markdownError ? (
+                <div>
+                  <p className="text-[color:var(--accent)] mb-2">
+                    Error loading content: {markdownError}
+                  </p>
+                  <p className="text-[color:var(--subtext)] text-sm">
+                    The site is working, but markdown files couldn't be loaded.
+                  </p>
+                </div>
+              ) : (
+                <p className="text-[color:var(--subtext)]">
+                  No writings available at the moment.
+                </p>
+              )}
             </div>
           )}
         </div>
