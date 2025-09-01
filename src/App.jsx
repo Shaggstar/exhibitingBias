@@ -1,6 +1,7 @@
 // App.tsx
 import React, { useState, useMemo } from 'react';
 import { ExternalLink, BookOpen, ScrollText, Brain, Network, FlaskConical, ChevronRight, Scale, User, FileText, ArrowRight } from 'lucide-react';
+import { getMarkdownIndex, filterBySection } from './lib/useMarkdownIndex.js';
 
 // Your existing markdown parsing functions (keep these)
 const parseFrontmatter = (content) => {
@@ -24,15 +25,7 @@ const parseFrontmatter = (content) => {
   return { content: body.trim(), data };
 };
 
-// Your existing getMarkdownIndex function (keep this too)
-const getMarkdownIndex = () => {
-  // Your existing implementation
-  return []; // Replace with your actual implementation
-};
-
-const filterBySection = (index, section) => {
-  return index.filter(item => item.section === section);
-};
+// Markdown functions are now imported from lib/useMarkdownIndex.js
 
 // Site content - easy to edit
 const siteContent = {
@@ -245,6 +238,84 @@ export default function App() {
               Moral precision (τ) enables both humans and AI systems to select appropriate behavioral models across scales. From personal decisions to collective governance, this is the computational basis for genuine value alignment.
             </p>
           </Card>
+        </div>
+      </Section>
+
+      {/* Writings Section */}
+      <Section id="writing" title="Writings" subtitle="Poetry and essays exploring the intersection of cognition, culture, and technology" icon={ScrollText}>
+        <div className="space-y-12">
+          {/* Essays */}
+          {essayItems.length > 0 && (
+            <div>
+              <h3 className="text-xl font-medium text-[color:var(--text)] mb-6 flex items-center gap-2">
+                <FileText className="h-5 w-5 text-[color:var(--accent)]" />
+                Essays
+              </h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                {essayItems.map((item) => (
+                  <Card key={item.slug} className="hover:border-[color:var(--accent)]/30 transition-colors">
+                    <div className="mb-3">
+                      <Badge>{item.data.kind || 'Essay'}</Badge>
+                    </div>
+                    <h4 className="text-lg font-medium text-[color:var(--text)] mb-2">
+                      {item.title}
+                    </h4>
+                    {item.data.summary && (
+                      <p className="text-[color:var(--subtext)] text-sm leading-relaxed mb-4">
+                        {item.data.summary}
+                      </p>
+                    )}
+                    {item.data.date && (
+                      <div className="text-xs text-[color:var(--subtext)] opacity-70">
+                        {new Date(item.data.date).toLocaleDateString()}
+                      </div>
+                    )}
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Poetry */}
+          {poetryItems.length > 0 && (
+            <div>
+              <h3 className="text-xl font-medium text-[color:var(--text)] mb-6 flex items-center gap-2">
+                <BookOpen className="h-5 w-5 text-[color:var(--accent)]" />
+                Poetry
+              </h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {poetryItems.map((item) => (
+                  <Card key={item.slug} className="hover:border-[color:var(--accent)]/30 transition-colors">
+                    <div className="mb-3">
+                      <Badge>{item.data.kind || 'Poem'}</Badge>
+                    </div>
+                    <h4 className="text-lg font-medium text-[color:var(--text)] mb-2">
+                      {item.title}
+                    </h4>
+                    {item.data.summary && (
+                      <p className="text-[color:var(--subtext)] text-sm leading-relaxed mb-4">
+                        {item.data.summary}
+                      </p>
+                    )}
+                    {item.data.date && (
+                      <div className="text-xs text-[color:var(--subtext)] opacity-70">
+                        {new Date(item.data.date).toLocaleDateString()}
+                      </div>
+                    )}
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* No content message */}
+          {essayItems.length === 0 && poetryItems.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-[color:var(--subtext)]">
+                No writings available at the moment.
+              </p>
+            </div>
+          )}
         </div>
       </Section>
 
