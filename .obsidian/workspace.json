@@ -186,6 +186,8 @@
   },
   "active": "aeff9d95afa251a2",
   "lastOpenFiles": [
+    "dist/assets/index-CwdglgtR.js",
+    "dist/assets/index-BBfEix_f.css",
     "src/content/essays/Untitled.md",
     "src/content/drama/Weaver.md",
     "src/content/essays/From Bias to Symbols to Natively Aligned AGI.md",
@@ -207,7 +209,6 @@
     "node_modules/jiti/lib/jiti.d.mts",
     "node_modules/jiti/lib/jiti.d.cts",
     "node_modules/jiti/lib/jiti.cjs",
-    "node_modules/jiti/lib/jiti-register.mjs",
     "node_modules/enhanced-resolve/README.md",
     "node_modules/magic-string/README.md",
     "node_modules/lightningcss/README.md",
@@ -220,7 +221,6 @@
     "node_modules/tar/node_modules/yallist/README.md",
     "node_modules/detect-libc/README.md",
     "node_modules/@tailwindcss/node/README.md",
-    "node_modules/chownr/README.md",
-    "node_modules/chownr/LICENSE.md"
+    "node_modules/chownr/README.md"
   ]
 }
