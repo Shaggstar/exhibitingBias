@@ -3,5 +3,11 @@
 @tailwind utilities;
 
 /* basic reset + system fonts */
-*{box-sizing:border-box} body{margin:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial}
+*{box-sizing:border-box} 
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial;
+  background-color: #0f0e10;
+  color: #f7f4f2;
+}
 

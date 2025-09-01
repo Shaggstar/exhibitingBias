@@ -167,7 +167,8 @@ export default function App() {
         '--surface': colors.surface,
         '--text': colors.text,
         '--subtext': colors.subtext,
-        '--accent': colors.accent
+        '--accent': colors.accent,
+        backgroundColor: colors.bg
       }}
     >
       {/* Navigation */}
