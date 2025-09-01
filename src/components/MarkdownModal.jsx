@@ -25,12 +25,15 @@ export default function MarkdownModal({ open, onClose, item, accent = "#FF6A3D" 
           </button>
         </div>
         <article className="prose prose-invert max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} components={{
-            a: ({ node, ...props }) => (
-              <a {...props} style={{ color: accent, textDecoration: "underline" }} />
-            ),
-            h2: ({ node, ...props }) => <h2 {...props} style={{ color: "var(--text)" }} />,
-          }}>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              a: ({ node, ...props }) => (
+                <a {...props} style={{ color: accent, textDecoration: "underline" }} />
+              ),
+              h2: ({ node, ...props }) => <h2 {...props} style={{ color: "var(--text)" }} />,
+            }}
+          >
             {item.content}
           </ReactMarkdown>
         </article>
