@@ -1,4 +1,4 @@
----
+const e=`---
 title: Thoughts for my Penny
 kind: Final (part 1 of 3)
 tags:
@@ -142,4 +142,4 @@ So you do that as often as you can. But honestly?
 
 You can still fall from the narrow path. It's not only blithe but the greatest defense to err; there is wisdom, in other words, in allowing yourself the space to slip. As often as you need it and whenever you need it. Because you can do all the right things and still come to find that it's someone else's folly that made the game never end the way it should. So you'll say at least it was grand. Grand that you had that moment stretched across the grass, roiled in laughter while the other people looked dourly at their simple fright of their final act coming to a close.
 
-With all the love, Dad
+With all the love, Dad`;export{e as default};

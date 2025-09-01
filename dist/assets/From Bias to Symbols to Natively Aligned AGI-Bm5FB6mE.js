@@ -1,4 +1,4 @@
----
+const e=`---
 title: From Bias to Symbols to Natively Aligned AGI
 kind: Final
 tags:
@@ -69,4 +69,4 @@ The answer lies in the same meaningful myth that allows my daughters to identify
 
 The atlas below charts the territory from the perceptual biases that makes us human, through the moral agreements that make us collectively us, to the political and economic institutions that structure our civilization, to the technological possibilities that might help us become better versions of ourselves.
 
-The future of both human and artificial intelligence may depend on making this myth conscious, systematic, and scalable. 
+The future of both human and artificial intelligence may depend on making this myth conscious, systematic, and scalable. `;export{e as default};

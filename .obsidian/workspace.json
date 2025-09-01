@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/drama/Weaver.md",
+                "file": "src/content/essays/Finding Our Place in the Age of Robot Gods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Weaver"
+              "title": "Finding Our Place in the Age of Robot Gods"
             }
           }
         ],
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/drama/Weaver.md",
+                "file": "src/content/essays/Finding Our Place in the Age of Robot Gods.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Weaver"
+              "title": "Outline of Finding Our Place in the Age of Robot Gods"
             }
           }
         ],
@@ -186,17 +186,22 @@
   },
   "active": "aeff9d95afa251a2",
   "lastOpenFiles": [
-    "dist/assets/index-SPZY4Ksd.js",
-    "dist/assets/index-DqZq-WoH.js",
-    "dist/assets/index-CCI-KKIs.js",
-    "dist/assets/index-Do5dn3Fz.js",
-    "dist/assets/index-Tggdz1M8.css",
-    "dist/assets/index-DTiNla3-.js",
-    "dist/assets/index-Ca3KsbXg.css",
-    "netlify.toml",
     "dist/index.html",
-    "dist/assets/index-XMDWYWso.js",
-    "dist/assets/index-PXaUgUNf.css",
+    "dist/assets/Tie Raid-BdZm8EK5.js",
+    "dist/assets/index-zWNOdxt6.js",
+    "dist/assets/index-Tggdz1M8.css",
+    "dist/assets/Thoughts for my Penny-B35KpAKM.js",
+    "dist/assets/The Old Tavern Sport-BZF5sWSb.js",
+    "dist/assets/Moral Case for building AGI with Morality-DsQP_8Or.js",
+    "dist/assets/Life Sequel-YcNXl6bJ.js",
+    "dist/assets/Hospice Humor-B1tK1uIW.js",
+    "dist/assets/From Bias to Symbols to Natively Aligned AGI-Bm5FB6mE.js",
+    "dist/assets/Finding Our Place in the Age of Robot Gods-D-ywIag6.js",
+    "src/content/essays/Activating the Cultural Perspective.md",
+    "src/content/essays/Thoughts for my Penny.md",
+    "src/content/essays/From Bias to Symbols to Natively Aligned AGI.md",
+    "src/content/essays/Finding Our Place in the Age of Robot Gods.md",
+    "src/content/drama/Weaver.md",
     "node_modules/strip-ansi-cjs/node_modules/ansi-regex/readme.md",
     "node_modules/strip-ansi-cjs/readme.md",
     "node_modules/path-scurry/node_modules/lru-cache/README.md",
@@ -216,11 +221,6 @@
     "node_modules/wrap-ansi-cjs/node_modules/strip-ansi/readme.md",
     "node_modules/wrap-ansi-cjs/node_modules/string-width/readme.md",
     "node_modules/wrap-ansi-cjs/node_modules/emoji-regex/README.md",
-    "node_modules/wrap-ansi-cjs/node_modules/ansi-styles/readme.md",
-    "node_modules/wrap-ansi-cjs/node_modules/ansi-regex/readme.md",
-    "node_modules/wrap-ansi-cjs/readme.md",
-    "node_modules/string-width-cjs/node_modules/strip-ansi/readme.md",
-    "node_modules/string-width-cjs/node_modules/emoji-regex/README.md",
-    "node_modules/string-width-cjs/node_modules/ansi-regex/readme.md"
+    "node_modules/wrap-ansi-cjs/node_modules/ansi-styles/readme.md"
   ]
 }

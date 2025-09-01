@@ -1,7 +1,7 @@
 // App.tsx
 import React, { useState, useMemo } from 'react';
 import { ExternalLink, BookOpen, ScrollText, Brain, Network, FlaskConical, ChevronRight, Scale, User, FileText, ArrowRight } from 'lucide-react';
-import { getMarkdownIndex, filterBySection } from './lib/useMarkdownIndex.js';
+import { getMarkdownIndex, filterBySection } from './lib/simpleMarkdownLoader.js';
 
 // Your existing markdown parsing functions (keep these)
 const parseFrontmatter = (content) => {
@@ -148,35 +148,30 @@ const MOHAtlasVisual = () => (
 );
 
 export default function App() {
-  const [markdownError, setMarkdownError] = useState(null);
+  const [index, setIndex] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   
-  const index = useMemo(() => {
-    try {
-      return getMarkdownIndex();
-    } catch (error) {
-      console.error('Error loading markdown index:', error);
-      setMarkdownError(error.message);
-      return [];
+  // Load markdown files on component mount
+  useMemo(() => {
+    async function loadMarkdown() {
+      try {
+        setLoading(true);
+        const markdownIndex = await getMarkdownIndex();
+        setIndex(markdownIndex);
+      } catch (err) {
+        console.error('Error loading markdown:', err);
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
     }
+    
+    loadMarkdown();
   }, []);
   
-  const poetryItems = useMemo(() => {
-    try {
-      return filterBySection(index, "poetry");
-    } catch (error) {
-      console.error('Error filtering poetry items:', error);
-      return [];
-    }
-  }, [index]);
-  
-  const essayItems = useMemo(() => {
-    try {
-      return filterBySection(index, "essays");
-    } catch (error) {
-      console.error('Error filtering essay items:', error);
-      return [];
-    }
-  }, [index]);
+  const poetryItems = useMemo(() => filterBySection(index, "poetry"), [index]);
+  const essayItems = useMemo(() => filterBySection(index, "essays"), [index]);
 
   return (
     <div 
@@ -334,23 +329,34 @@ export default function App() {
             </div>
           )}
 
-          {/* No content message */}
-          {essayItems.length === 0 && poetryItems.length === 0 && (
+          {/* Loading and error states */}
+          {loading && (
             <div className="text-center py-12">
-              {markdownError ? (
-                <div>
-                  <p className="text-[color:var(--accent)] mb-2">
-                    Error loading content: {markdownError}
-                  </p>
-                  <p className="text-[color:var(--subtext)] text-sm">
-                    The site is working, but markdown files couldn't be loaded.
-                  </p>
-                </div>
-              ) : (
-                <p className="text-[color:var(--subtext)]">
-                  No writings available at the moment.
-                </p>
-              )}
+              <p className="text-[color:var(--subtext)]">
+                Loading writings...
+              </p>
+            </div>
+          )}
+          
+
+          
+          {error && (
+            <div className="text-center py-12">
+              <p className="text-[color:var(--accent)] mb-2">
+                Error loading content: {error}
+              </p>
+              <p className="text-[color:var(--subtext)] text-sm">
+                The site is working, but markdown files couldn't be loaded.
+              </p>
+            </div>
+          )}
+          
+          {/* No content message */}
+          {!loading && !error && essayItems.length === 0 && poetryItems.length === 0 && (
+            <div className="text-center py-12">
+              <p className="text-[color:var(--subtext)]">
+                No writings available at the moment.
+              </p>
             </div>
           )}
         </div>
