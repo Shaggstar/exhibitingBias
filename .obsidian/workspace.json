@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/poetry/Tie Raid.md",
+                "file": "src/content/essays/From Bias to Symbols to Natively Aligned AGI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Tie Raid"
+              "title": "From Bias to Symbols to Natively Aligned AGI"
+            }
+          },
+          {
+            "id": "aeff9d95afa251a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/drama/Weaver.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Weaver"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/content/poetry/Tie Raid.md",
+                "file": "src/content/essays/From Bias to Symbols to Natively Aligned AGI.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Tie Raid"
+              "title": "Backlinks for From Bias to Symbols to Natively Aligned AGI"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/content/poetry/Tie Raid.md",
+                "file": "src/content/essays/From Bias to Symbols to Natively Aligned AGI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Tie Raid"
+              "title": "Outgoing links from From Bias to Symbols to Natively Aligned AGI"
             }
           },
           {
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/content/poetry/Tie Raid.md",
+                "file": "src/content/drama/Weaver.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tie Raid"
+              "title": "Outline of Weaver"
             }
           }
         ],
@@ -169,8 +184,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "6c9ef0a8e892b4cb",
+  "active": "aeff9d95afa251a2",
   "lastOpenFiles": [
+    "src/content/essays/Untitled.md",
+    "src/content/drama/Weaver.md",
+    "src/content/essays/From Bias to Symbols to Natively Aligned AGI.md",
+    "src/content/site/products.md",
+    "src/content/site/about.md",
+    "src/content/site/agi-connection.md",
+    "src/content/site/hero.md",
+    "src/content/site",
+    "src/content/essays/Finding Our Place in the Age of Robot Gods.md",
+    "src/content/poetry/Tie Raid.md",
+    "src/content/drama",
+    "src/content/Untitled.md",
     "node_modules/tar/README.md",
     "node_modules/@tailwindcss/oxide-darwin-x64/LICENSE",
     "node_modules/jiti/README.md",
@@ -181,8 +208,6 @@
     "node_modules/jiti/lib/jiti.d.cts",
     "node_modules/jiti/lib/jiti.cjs",
     "node_modules/jiti/lib/jiti-register.mjs",
-    "node_modules/jiti/lib/jiti-register.d.mts",
-    "node_modules/jiti/lib/jiti-native.mjs",
     "node_modules/enhanced-resolve/README.md",
     "node_modules/magic-string/README.md",
     "node_modules/lightningcss/README.md",
@@ -196,16 +221,6 @@
     "node_modules/detect-libc/README.md",
     "node_modules/@tailwindcss/node/README.md",
     "node_modules/chownr/README.md",
-    "node_modules/chownr/LICENSE.md",
-    "node_modules/lightningcss-darwin-x64/README.md",
-    "node_modules/@tailwindcss/postcss/README.md",
-    "node_modules/@tailwindcss/oxide-darwin-x64/README.md",
-    "node_modules/@alloc/quick-lru/readme.md",
-    "node_modules/autoprefixer/README.md",
-    "node_modules/tailwindcss/README.md",
-    "node_modules/fraction.js/README.md",
-    "node_modules/postcss-value-parser/README.md",
-    "node_modules/normalize-range/readme.md",
-    "node_modules/fsevents/README.md"
+    "node_modules/chownr/LICENSE.md"
   ]
 }
