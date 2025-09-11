@@ -1,0 +1,42 @@
+{
+    "nodes": [
+      {"id":"MOH","label":"MOH","type":"Foundational","summary":"Language/symbols arose from treating norms as objective."},
+      {"id":"TMS","label":"TMS","type":"Foundational","summary":"Hierarchical model selection across perspectives."},
+      {"id":"alpha","label":"α","type":"Parameter","summary":"Cultural precision parameter; tunes constraints."},
+      {"id":"F","label":"Free Energy","type":"Parameter","summary":"Accuracy–complexity trade-off."},
+      {"id":"s1","label":"s^(1) Individual","type":"Level","summary":"Ego preferences, direct sensations."},
+      {"id":"s2","label":"s^(2) Intimates","type":"Level","summary":"Dyads/partners; trust & cooperation."},
+      {"id":"s3","label":"s^(3) Shibboleth","type":"Level","summary":"Accent/badge signaling; in/out-group."},
+      {"id":"sL","label":"s^(L) Cultural/Moral","type":"Level","summary":"Norm alignment, archetypes, reputation."},
+      {"id":"LevinDennett","label":"Levin & Dennett","type":"Theory","summary":"Expanded self via informational coupling."},
+      {"id":"Curry","label":"O. S. Curry","type":"Theory","summary":"Morality solves cooperation problems."},
+      {"id":"Simon","label":"Herbert Simon","type":"Theory","summary":"Bounded rationality; organizational identity."},
+      {"id":"Neoclassical","label":"Neoclassical Econ","type":"Theory","summary":"Isolated optimizing agents."},
+      {"id":"Dyadic","label":"Dyadic Morality","type":"Theory","summary":"Agent–patient template of harm."},
+      {"id":"MFT","label":"Moral Foundations","type":"Theory","summary":"Partly universal moral domains."},
+      {"id":"Citizen","label":"Archetype: Citizen","type":"Archetype","summary":"Baseline pro-social cooperant."},
+      {"id":"Soldier","label":"Archetype: Soldier","type":"Archetype","summary":"Defense/action-oriented role."},
+      {"id":"Sage","label":"Archetype: Sage","type":"Archetype","summary":"Epistemic/uncertainty-reduction role."},
+      {"id":"Symbols","label":"Symbols/Language","type":"Theory","summary":"From performatives to declaratives."}
+    ],
+    "links": [
+      {"source":"s1","target":"s2","relation":"SCALES-TO"},
+      {"source":"s2","target":"s3","relation":"SCALES-TO"},
+      {"source":"s3","target":"sL","relation":"SCALES-TO"},
+      {"source":"alpha","target":"s1","relation":"MODULATES"},
+      {"source":"alpha","target":"s2","relation":"MODULATES"},
+      {"source":"alpha","target":"s3","relation":"MODULATES"},
+      {"source":"alpha","target":"sL","relation":"MODULATES"},
+      {"source":"MOH","target":"Symbols","relation":"EXPLAINS"},
+      {"source":"TMS","target":"MOH","relation":"EXTENDS"},
+      {"source":"Neoclassical","target":"LevinDennett","relation":"PARALLELS"},
+      {"source":"LevinDennett","target":"Curry","relation":"ENABLES"},
+      {"source":"Curry","target":"Simon","relation":"PARALLELS"},
+      {"source":"Dyadic","target":"MFT","relation":"EXTENDS"},
+      {"source":"MFT","target":"MOH","relation":"VALIDATES"},
+      {"source":"sL","target":"Citizen","relation":"PRODUCES"},
+      {"source":"sL","target":"Soldier","relation":"PRODUCES"},
+      {"source":"sL","target":"Sage","relation":"PRODUCES"}
+    ]
+  }
+  

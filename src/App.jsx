@@ -2,6 +2,33 @@
 import React, { useState, useMemo } from 'react';
 import { ExternalLink, BookOpen, ScrollText, Brain, Network, FlaskConical, ChevronRight, Scale, User, FileText, ArrowRight } from 'lucide-react';
 import { getMarkdownIndex, filterBySection } from './lib/simpleMarkdownLoader.js';
+import Overview from "./components/Overview";
+import MOHGraph from "./components/MOHGraph";
+import Pathways from "./components/Pathways";
+import IdentityNavigator from "./components/IdentityNavigator";
+import "./App.css";
+
+export default function App() {
+  return (
+    <>
+      {/* existing nav/hero kept as-is; just change hero CTA href to "#knowledge-graph" if needed */}
+      {/* ... your current Hero ... */}
+
+      <Overview />
+
+      {/* KG ABOVE PATHS */}
+      <section className="section" id="knowledge-graph">
+        <h2 className="section-title">Knowledge Graph</h2>
+        <MOHGraph />
+      </section>
+
+      <Pathways />
+      <IdentityNavigator />
+
+      {/* Videos / Writings / Papers sections stay exactly as they are */}
+    </>
+  );
+}
 
 // Your existing markdown parsing functions (keep these)
 const parseFrontmatter = (content) => {
