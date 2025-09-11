@@ -2,6 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* --- Custom MOH/TMS site styles --- */
+:root {
+  --bg: #0f0e10;
+  --surface: #17151a;
+  --text: #f7f4f2;
+  --subtext: #bdb5af;
+  --accent: #FF6A3D;
+  --accentSoft: #FFB08C;
+}
+
+.section {   padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto; }
+.section-title { font-size: 2rem;
+  line-height: 1.2;
+  margin: 0 0 1.25rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--accent) 0%, #f77737 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+    padding: .4rem .8rem;
+    border-radius: 999px;
+    border: 1px solid color-mix(in oklab, var(--accent) 30%, transparent);
+    background: color-mix(in oklab, var(--accent) 12%, transparent);
+    color: var(--text);
+    font-size: .9rem;
+    cursor: pointer;
+    transition: transform .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .pill:hover {
+    transform: translateY(-1px);
+    background: color-mix(in oklab, var(--accent) 18%, transparent);
+    border-color: color-mix(in oklab, var(--accent) 45%, transparent);
+  }
+  
+  .pathway-container {
+    background: color-mix(in oklab, #ffffff 5%, transparent);
+    border: 1px solid color-mix(in oklab, var(--accent) 25%, transparent);
+    border-radius: 14px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .pathway-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem 1rem;
+    flex-wrap: wrap;
+    color: var(--subtext);
+  }
+  .pathway-node {
+    background: color-mix(in oklab, #000 80%, transparent);
+    padding: .9rem;
+    min-width: 140px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid color-mix(in oklab, var(--accent) 28%, transparent);
+    transition: transform .15s ease, background .15s ease, border-color .15s ease;
+  }
+  .pathway-node:hover {
+    transform: translateY(-2px);
+    background: color-mix(in oklab, var(--accent) 10%, transparent);
+    border-color: color-mix(in oklab, var(--accent) 45%, transparent);
+  }
+  
+  .simulation-controls {
+    background: color-mix(in oklab, #fff 6%, transparent);
+    border: 1px solid color-mix(in oklab, var(--accent) 25%, transparent);
+    border-radius: 14px;
+    padding: 1rem;
+    margin: 1rem 0 0;
+    display: flex;
+    gap: 1rem 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: .45rem;
+    min-width: 180px;
+  }
+  .control-group label {
+    color: #ff8c42;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+  .control-value {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
 /* basic reset + system fonts */
 *{box-sizing:border-box} 
 body{
