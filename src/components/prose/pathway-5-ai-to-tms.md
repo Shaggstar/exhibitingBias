@@ -1,0 +1,7 @@
+Active inference generalizes the view of the brain as a prediction engine to all things and elements of life. Organisms persist by modeling their environment, minimizing uncertainty about the future. This framework, developed in neuroscience, extends to culture.
+
+Frith and Friston argued that shared generative models allow agents to coordinate (Friston and Frith 2015). Levin described identity in computational terms, noting that the self is bounded by a light cone of information processing (Levin 2019). Ruben Laukkonen and colleagues introduced epistemic depth, describing how models extend across temporal scales (Laukkonen et al. 2025).
+
+Transcendental Model Selection builds on these ideas. The parameter α, defined as a function of precision, context, and scale, governs the choice between competing models. Morality functions as a computational parameter: it weights which model of behavior should be followed when multiple contexts compete. In family life, friendship, work, or anonymous society, behavior diverges. Generally people have their own preferences that conflict with the group, and even if they are genuinely attached or perceive their own goals as part of a greater group, the norms they adopt in respect could also vary from another's expectation.  Morality integrates people's diverging potential. 
+
+What Jung intuited as the cosmic self and what Viktor Frankl described as the meaning that sustains life can here be given computational form.

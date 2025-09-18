@@ -1,0 +1,5 @@
+Cognition unfolds through two modes. The analytic mode parses information sequentially, dividing and isolating. The gestalt mode sees wholes, analogies, and patterns. Each is indispensable, but each by itself is incomplete.
+
+John Vervaeke and John Kennedy contrasted analytic and metaphorical reasoning, arguing that both are needed for intelligence. Robert Pirsig described the same polarity as the classic versus romantic stance, observing that quality lies beyond either mode (Pirsig 1974). Douglas Hofstadter and Emmanuel Sanders used the terms essence and surface to capture the same duality (Hofstadter and Sanders 2013).
+
+Iain McGilchrist, similar to Henrich, argued that Western culture privileges the analytic through left-brain dominance, at the expense of holistic attention (McGilchrist 2009; Henrich 2020). William Blake criticized Newton’s singular vision and urged a return to what he called fourfold vision (Higgs 2021). In my own terms, transcendental model selection requires both. The analytic mode deepens epistemic hierarchy, while the gestalt mode enables cross-context integration. Together they stabilize the balance between depth and breadth.
