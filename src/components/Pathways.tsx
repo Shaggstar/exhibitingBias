@@ -1,51 +1,47 @@
-import React from "react";
-import Path1Circular from "./Path1Circular";
-import PathAffect from "./PathAffect"; // ⬅️ add this import
+import React, { useMemo, useState } from "react";
+import { usePathwaysData } from "../data/usePathwaysData";
+import PathwaysGraph from "./PathwaysGraph";
+import PathwaysOutline from "./PathwaysOutline";
+import SevenPathways from "./SevenPathways";
+
+type Link = { source: string; target: string };
+
+const LINKS: Link[] = [
+  { source: "single_equilibrium", target: "steady_state" },
+  { source: "homo_economicus", target: "coase_firm" },
+  { source: "coase_firm", target: "simon_we" },
+  { source: "narrative_paradigm", target: "booker_hero" },
+  { source: "booker_hero", target: "bloom_shakespeare" },
+  { source: "skinner_sr", target: "adolphs_anderson_emotion" },
+  { source: "adolphs_anderson_emotion", target: "solms_damasio_affect_self" },
+  { source: "moffett_accent", target: "boyd_henrich" },
+  { source: "boyd_henrich", target: "heyes_gadgets" },
+  { source: "north_institutions", target: "moh_core" },
+  { source: "moh_core", target: "tms_core" },
+];
 
 export default function Pathways() {
+  const data = usePathwaysData();
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+
+  const items = useMemo(() => data, [data]);
+
   return (
     <section className="section" id="pathways">
-      <h2 className="section-title">Theoretical Pathways (Context)</h2>
+      <h2 className="section-title">7 Pathways</h2>
 
-      {/* Path 1 (circular, HS → Neoclassical loop) */}
-      <Path1Circular />
-
-      {/* Path 2 (Harm-based → MOH) */}
-      <div className="pathway-container">
-        <h3 style={{ color: "#ff8c42" }}>Path 2: Harm-Based Morality</h3>
-        <div className="pathway-flow">
-          <div className="pathway-node"><strong>Mark Moffett</strong></div><span>→</span>
-          <div className="pathway-node"><strong>Dyadic Morality</strong></div><span>→</span>
-          <div className="pathway-node"><strong>Moral Foundations</strong></div><span>→</span>
-          <div className="pathway-node"><strong>MOH</strong></div>
+      <div className="rounded-2xl overflow-hidden border border-white/10 bg-black/20 mb-6">
+        <PathwaysGraph data={items} links={LINKS} onSelect={setSelectedId} />
+        <div className="px-4 py-2 text-xs text-[color:var(--accentSoft)]">
+          Click any node—no hover required. The quote + citation appears below.
         </div>
       </div>
 
-      {/* Path (Affect-first): NEW */}
-      <PathAffect />
+      <PathwaysOutline items={items} selectedId={selectedId} setSelectedId={setSelectedId} />
 
-      {/* Path 4 */}
-      <div className="pathway-container">
-        <h3 style={{ color: "#ff8c42" }}>Path 4: Cultural Evolution</h3>
-        <div className="pathway-flow">
-          <div className="pathway-node"><strong>Josh Greene</strong></div><span>→</span>
-          <div className="pathway-node"><strong>Boyd &amp; Henrich</strong></div><span>→</span>
-          <div className="pathway-node"><strong>Cecilia Heyes</strong></div><span>→</span>
-          <div className="pathway-node"><strong>TMS</strong></div>
-        </div>
-      </div>
-
-      {/* Path 5 */}
-      <div className="pathway-container">
-        <h3 style={{ color: "#ff8c42" }}>Path 5: Bayesian Belief → Religious Faith</h3>
-        <div className="pathway-flow">
-          <div className="pathway-node"><strong>Bayes vs Hume</strong></div><span>→</span>
-          <div className="pathway-node"><strong>Active Inference</strong></div><span>→</span>
-          <div className="pathway-node"><strong>Biological Agency</strong></div><span>→</span>
-          <div className="pathway-node"><strong>Cultural Faith</strong></div>
-        </div>
+      <div className="mt-16">
+        <SevenPathways />
       </div>
     </section>
   );
 }
-  

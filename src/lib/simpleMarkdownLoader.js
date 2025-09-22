@@ -37,6 +37,9 @@ const markdownFiles = {
   "poetry/Life Sequel": () => import("../content/poetry/Life Sequel.md?raw"),
   "poetry/The Old Tavern Sport": () => import("../content/poetry/The Old Tavern Sport.md?raw"),
   "poetry/Tie Raid": () => import("../content/poetry/Tie Raid.md?raw"),
+
+  // Drama
+  "drama/Weaver Screenplay": () => import("../content/drama/Weaver Screenplay.md?raw"),
 };
 
 export async function getMarkdownIndex() {
