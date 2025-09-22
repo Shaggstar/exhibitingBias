@@ -24,7 +24,11 @@ type PathwayChart = {
 const PATHWAYS: PathwayChart[] = [
   {
     id: "p-evolution",
+<<<<<<< HEAD
     title: "1. Evolution of Identity",
+=======
+    title: "1. Evolution",
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
     markdown: pathway1,
     chart: `graph TD\n  Accent["Accent / Shibboleth"] --> Morality["Innate Morality"]\n  Morality --> Culture["Cultural Learning"]\n  Culture --> Governance["Institutions / Governance"]\n  Governance -.-> Culture`,
     tooltips: {
@@ -52,6 +56,7 @@ const PATHWAYS: PathwayChart[] = [
     id: "p-multiple-nulls",
     title: "3. Multiple Null Hypotheses",
     markdown: pathway3,
+<<<<<<< HEAD
     chart: `flowchart TB\n  subgraph Reductive["Reductive Frames"]\n    Econ["Homo Economicus"]\n    Gene["Selfish Gene"]\n    Eq["Single Equilibrium"]\n    Stim["Stimulus → Response"]\n    Binary["Binary Opposition"]\n  end\n  Econ --> Firms["Coase: Why Firms?"]\n  Econ --> WeId["Simon: 'We' Identification"]\n  Econ --> NarrativeSum["Narrative/Scenario Analysis"]\n  Econ --> Coop["Curry: Morality = Cooperation"]\n  Econ -.-> Rockefeller["Rockefeller: Cooperation"]\n  Econ -.-> Morgan["Morgan: Character > Collateral"]\n  Gene --> Rel["Biological Relativity"]\n  Eq --> Steady["Non-equilibrium Steady States"]\n  Stim --> Emotion["Emotion as Intervening State"]\n  Emotion --> FeltSelf["Affect → Felt Self"]\n  Binary --> Diff["Différance"]\n  NarrativeSum --> Stewardship["Narrative Stewardship"]`,
     tooltips: {
       "Reductive Frames": "Baseline models that flatten complex agents into single variables.",
@@ -72,6 +77,19 @@ const PATHWAYS: PathwayChart[] = [
       "Affect → Felt Self": "Feelings knit disparate processes into a self.",
       "Différance": "Meaning arises from differences—not fixed binaries.",
       "Narrative Stewardship": "Narratives steward shared futures through care."
+=======
+    chart: `flowchart LR\n  Null[["Null Hypothesis"]] -->|assumes| Econ["Homo Economicus"]\n  Null --> Gene["Selfish Gene"]\n  Null --> Eq["Single Equilibrium"]\n  Econ --> Firms["Firms + 'We' identity"]\n  Gene --> Rel["Biological Relativity"]\n  Eq --> Steady["Non-equilibrium Steady States"]\n  Econ --> NarrativeSum["Narrative Scenario Analysis"]\n  NarrativeSum --> Stewardship["Living Stewardship"]`,
+    tooltips: {
+      "Null Hypothesis": "Reductionist baselines that over simplify behaviour.",
+      "Homo Economicus": "Assumes isolated rational actors.",
+      "Selfish Gene": "Frames evolution as lone competition.",
+      "Single Equilibrium": "Treats systems as static.",
+      "Firms + 'We' identity": "Collective identities emerge even in firms.",
+      "Biological Relativity": "Multi scale causation in biology.",
+      "Non-equilibrium Steady States": "Keeps organisms adaptive.",
+      "Narrative Scenario Analysis": "Brings plural models to decisions.",
+      "Living Stewardship": "Reframes governance as care."
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
     },
     hint: "Reductionist baselines challenged by multi-level constraints."
   },

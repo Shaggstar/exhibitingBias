@@ -237,6 +237,7 @@ body{
   white-space: nowrap;
 }
 
+<<<<<<< HEAD
 
 .hat.halo {
   top: 6px;
@@ -287,6 +288,52 @@ body{
   transform: rotate(18deg) skewX(6deg);
 }
 
+=======
+.hat.halo {
+  top: 6px;
+  width: 68px;
+  height: 18px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,191,150,0.75);
+  background: radial-gradient(circle, rgba(255,191,150,0.35) 0%, transparent 68%);
+  box-shadow: 0 5px 12px rgba(255,191,150,0.35);
+}
+
+.hat.halo::after {
+  content: '';
+  position: absolute;
+  inset: 3px 10px;
+  border-radius: 999px;
+  border: 2px solid rgba(255,222,190,0.5);
+}
+
+.hat.horns {
+  top: 24px;
+  width: 72px;
+  height: 36px;
+}
+
+.hat.horns span {
+  position: absolute;
+  top: -12px;
+  width: 18px;
+  height: 24px;
+  border: 3px solid rgba(255,151,120,0.85);
+  border-bottom: none;
+  border-radius: 55% 55% 0 0;
+  background: rgba(255,151,120,0.15);
+}
+
+.hat.horns span:first-child {
+  left: 10px;
+  transform: rotate(-22deg);
+}
+
+.hat.horns span:nth-child(2) {
+  right: 10px;
+  transform: rotate(22deg);
+}
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
 
 .hat.hands {
   top: 30px;

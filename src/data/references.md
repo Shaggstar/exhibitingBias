@@ -250,6 +250,7 @@ link: ""
 axis: Governance
 group: Synthesis
 ---
+<<<<<<< HEAD
 
 ---
 id: dual_modes_attention
@@ -338,3 +339,5 @@ link: "#goals-pomdp"
 axis: Governance
 group: Spec
 ---
+=======
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd

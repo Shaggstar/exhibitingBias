@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 the final step is to test these ideas in silico. Albarracin and colleagues modeled echo chambers using active inference, showing how agents reinforce beliefs through selective sampling of evidence (Albarracin et al. 2022). Thestrup Waade and others applied active inference to multi-arm bandit problems, showing how uncertainty minimization scales across levels (Waade et al. 2025).
+=======
+he final step is to test these ideas in silico. Albarracin and colleagues modeled echo chambers using active inference, showing how agents reinforce beliefs through selective sampling of evidence (Albarracin et al. 2022). Thestrup Waade and others applied active inference to multi-arm bandit problems, showing how uncertainty minimization scales across levels (Waade et al. 2025).
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
 
 My own simulation goals extend this work. Agents can be modeled at intimate, shibboleth, and cultural levels, each with distinct states, observations, and actions. The α parameter captures cultural precision, constraining beliefs and shaping cooperation. From there we can ask questions about the transition from egalitarian morality to archetypal roles, the emergence of symbolic scaffolding, and the possibility of using moral precision as a principle for AI alignment.
