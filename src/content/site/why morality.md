@@ -1,0 +1,9 @@
+As we race through this age of narrow AI toward generally intelligent systems (AGI), the only way to ensure that our creations align to our values is to better understand morality, as an innate and formal tools.  This is necessary not just for alignment, because in addition to a constrain on behavior morality served as a gateway to symbolic cognition. 
+
+Given that humans are the most prominent example of a generally intelligent agent, computationally  representing how humanity has achieved it in a moral context may offer native governance, i.e. a way for synthetic agents to align to our interests because they grow inside our moral frame. This could apply to agents themselves and enable third party governance systems that polices other AI systems. 
+
+While in some sense this is a new problem; in another it is the oldest human drama, learning how we each live among strangers who are nonetheless generally intelligent.
+
+Morality lets humans scale. We can sit with countless people beyond our intimates and learn from voices we may never meet. It binds strangers, softens the static between the roles we carry, and cues shared expectations for behavior and interpretation. Before we ever played with written symbols we tuned our ears to accents and shibboleths. From accent to custom to culture to institution, symbolic cognition climbs those layers. 
+
+Across development and history, moral intuitions arrive early, stir the emotions that drive social life, and nudge us to rationalize our feelings in ways both ancient and oddly new. They steady expectations when incentives alone would fracture the comfort of prediction. Symbols begin with social valuation. That was our doorway into what the ancient Greeks called the logos, our 

@@ -1,0 +1,7 @@
+Please do not update the written content of the site without explicit instructions, even if correcting minor grammatically changes, please propose them and have me update as appropriate. 
+
+the goal is to create a site that showcases my own work, centrally the pursuit to understand humanity and improve my own personal ability to write this story. improve the ability for others to understand the narrative of our origins I am trying to re-write, draw attention, support, and collaborators to the vignettes and simulations and give me structured feedback on my content. Ranging from simulations to my poetry, drama, and essays. This is in line with my call to what humanity needs in this agent of artifice. We each have our own ghost writer and have available resources that can substitute the knowledge work that gave us meaning. 
+
+Instead of focusing on what this age replaces my goal is instead to focus on what we can become. More consequential than a ghost writer we can have our own editor, our own intellectual mentor, finding gaps in our knowledge, giving us a syllabus and general direction for our tutelage. 
+
+I do not want to showcase the LLM reduced prose, I would appreciate structured and expert feedback on my writing and attempts at computational simulations. 

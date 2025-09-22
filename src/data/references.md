@@ -250,3 +250,94 @@ link: ""
 axis: Governance
 group: Synthesis
 ---
+<<<<<<< HEAD
+
+---
+id: dual_modes_attention
+label: Dual Modes of Attention
+researchers: "Vervaeke; Kennedy; Pirsig; Hofstadter & Sander; Blake"
+hover: "Analytic vs Gestalt (metaphor), classic vs romantic, surfaces vs essences, and Blake’s fourfold vision."
+cite: "Vervaeke & Kennedy (cognition); Pirsig (1974); Hofstadter & Sander (2013); Blake via Higgs (2021)."
+link: ""
+axis: Culture
+group: Attention Modes
+---
+
+---
+id: metaphor_vs_analytic
+label: Metaphor ↔ Analytic
+researchers: "J. Vervaeke; C. Kennedy"
+hover: "Parsing letters vs grasping meaning; complementary modes of cognition."
+cite: "Talks/essays on metaphor vs analytic modes."
+link: ""
+axis: Culture
+group: Cognition
+---
+
+---
+id: pirsig_quality
+label: Classic vs Romantic (Quality)
+researchers: "R. Pirsig"
+hover: "Quality sits prior to subject-object split; classic (analytic) vs romantic (gestalt)."
+cite: "Pirsig (1974). Zen and the Art of Motorcycle Maintenance."
+link: ""
+axis: Morality
+group: Philosophy of Mind
+---
+
+---
+id: surfaces_essences
+label: Surfaces & Essences
+researchers: "D. Hofstadter; E. Sander"
+hover: "Analogy as the core of thought; essence emerges through patterns."
+cite: "Hofstadter & Sander (2013). Surfaces and Essences. Basic Books."
+link: ""
+axis: Culture
+group: Analogy
+---
+
+---
+id: blake_fourfold
+label: From Newton’s Single Vision → Fourfold
+researchers: "W. Blake (via Higgs)"
+hover: "Against narrow ‘single vision’; toward integrated fourfold seeing."
+cite: "Higgs (2021) on Blake’s ‘fourfold vision’."
+link: ""
+axis: Culture
+group: Poetics
+---
+
+---
+id: echo_chambers
+label: Echo-Chambers via Active Inference
+researchers: "Albarracin et al."
+hover: "Agents sample to justify priors; echo-chambers stabilize once certainty is high."
+cite: "Albarracin et al. (2022). Active-inference model of echo-chambers."
+link: ""
+axis: Governance
+group: Social Simulation
+---
+
+---
+id: mab_scaling
+label: Multi-Armed Bandit (Scaling)
+researchers: "Thestrup Waade et al."
+hover: "Testing scale-invariant active-inference behavior via bandit setups."
+cite: "Thestrup Waade et al. (2025)."
+link: ""
+axis: Culture
+group: Decision Simulation
+---
+
+---
+id: sim_goals_pomdp
+label: Goals & POMDP Elements
+researchers: "Shaggy"
+hover: "Simulation goals and elements for TMS (POMDP framing)."
+cite: "Goals and POMDP Elements (overview doc)."
+link: "#goals-pomdp"
+axis: Governance
+group: Spec
+---
+=======
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd

@@ -1,6 +1,14 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import * as d3 from "d3";
 
+<<<<<<< HEAD
+// NEW: avatar images
+import EvilIcon from "../assets/evil-icon.png";
+import ZenIcon from "../assets/zen.png";
+import ObseqIcon from "../assets/obsequious.webp";
+
+=======
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
 type ContextKey = "family" | "professional" | "public" | "misc1" | "misc2" | "misc3";
 
 type MiniNode = {
@@ -17,12 +25,21 @@ type MiniLink = {
 };
 
 const CONTEXTS: { key: ContextKey; label: string; color: string; icon: string }[] = [
+<<<<<<< HEAD
+  { key: "family", label: "s^(2) • Family / Intimates", color: "#ffd166", icon: "💍" },
+  { key: "professional", label: "s^(3) • Professional (Tags)", color: "#33c3ff", icon: "👔" },
+  { key: "public", label: "s^(3) • Public / Civic (Tags)", color: "#ff7b6b", icon: "🎒" },
+  { key: "misc1", label: "s^(L) • Sⁿ Misc 1", color: "#a98bff", icon: "🧭" },
+  { key: "misc2", label: "s^(L) • Sⁿ Misc 2", color: "#84fab0", icon: "🧪" },
+  { key: "misc3", label: "s^(L) • Sⁿ Misc 3", color: "#f5b0ff", icon: "🎭" },
+=======
   { key: "family", label: "Family / Intimates", color: "#ffd166", icon: "💍" },
   { key: "professional", label: "Professional", color: "#33c3ff", icon: "👔" },
   { key: "public", label: "Public / Civic", color: "#ff7b6b", icon: "🎒" },
   { key: "misc1", label: "Sⁿ Misc 1", color: "#a98bff", icon: "🧭" },
   { key: "misc2", label: "Sⁿ Misc 2", color: "#84fab0", icon: "🧪" },
   { key: "misc3", label: "Sⁿ Misc 3", color: "#f5b0ff", icon: "🎭" },
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
 ];
 
 const LOADOUT = [
@@ -85,6 +102,8 @@ function makeLinks(nodes: MiniNode[], attention: AttentionMap, level: number, ac
   });
 }
 
+<<<<<<< HEAD
+=======
 function HumanFigure({
   size = 70,
   head = "#ffd166",
@@ -149,6 +168,7 @@ function handsVisual() {
   );
 }
 
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
 function triangleWeights(t_p: number, t_l: number, spread: number) {
   const angel = t_p * t_l * (0.6 + 0.4 * spread) + 1e-3;
   const tool = t_p * (1 - t_l) * (0.8 - 0.5 * spread) + 1e-3;
@@ -175,6 +195,11 @@ export default function IdentityNavigator() {
   const [myopia, setMyopia] = useState<boolean>(false);
   const [savedAttention, setSavedAttention] = useState<AttentionMap | null>(null);
   const [focusKey, setFocusKey] = useState<ContextKey>("family");
+<<<<<<< HEAD
+  const [egoSalience, setEgoSalience] = useState<number>(0.5);
+  const [egoNote, setEgoNote] = useState<string>("");
+=======
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
 
   const contextKeys = useMemo(() => CONTEXTS.map((ctx) => ctx.key), []);
 
@@ -328,9 +353,18 @@ export default function IdentityNavigator() {
   return (
     <section className="section" id="identity">
       <h2 className="section-title">Identity Navigator</h2>
+<<<<<<< HEAD
+      <p className="text-[--accentSoft] text-xs mb-4 max-w-3xl mx-auto text-center">
+        s^(1): personal/ego · s^(2): dyadic/intimates · s^(3): tag-based/shibboleth · s^(L): cultural abstraction
+      </p>
+      <p className="text-[#bdb5af] max-w-3xl mx-auto mb-6 text-center">
+        Adjust Levels and Precision α, then steer attention across S¹ to Sⁿ contexts and watch the
+        avatar switch between archetype avatars as the trade off shifts.
+=======
       <p className="text-[#bdb5af] max-w-3xl mx-auto mb-6 text-center">
         Adjust Levels and Precision α, then steer attention across S¹ to Sⁿ contexts and watch the
         avatar swap between halo, horns, or worry hands as the trade off shifts.
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
       </p>
 
       <div className="grid xl:grid-cols-[minmax(480px,1fr)_360px] gap-6 items-start">
@@ -422,6 +456,9 @@ export default function IdentityNavigator() {
             </div>
           </div>
 
+<<<<<<< HEAD
+          
+=======
           <details className="simulation-controls" open style={{ padding: "0.75rem", gap: "0.75rem" }}>
             <summary className="text-sm uppercase tracking-[0.25em] text-[var(--accentSoft)] cursor-pointer">
               Active attention by context
@@ -462,6 +499,7 @@ export default function IdentityNavigator() {
               and Sⁿ collects the miscellaneous settings you are still mapping.
             </div>
           </details>
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
 
           <div className="rounded-xl overflow-hidden border border-orange-300/25" style={{ maxHeight: 380 }}>
             <svg ref={svgRef} width="100%" height={height} viewBox={`0 0 ${width} ${height}`} />
@@ -473,9 +511,13 @@ export default function IdentityNavigator() {
 
           <div className="flex flex-col items-center gap-4">
             <div className="relative w-44 h-44 flex items-center justify-center">
+<<<<<<< HEAD
+              {/* lasso rings (keep your existing visual affordance) */}
+=======
               {(topArchetype.key === "angel" && haloVisual()) ||
                 (topArchetype.key === "nave" && hornVisual()) ||
                 (topArchetype.key === "tool" && handsVisual())}
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
               <svg viewBox="0 0 120 120" className="absolute inset-0" aria-hidden>
                 {Array.from({ length: lassoLoops }).map((_, idx) => {
                   const radius = 32 + idx * 8;
@@ -496,6 +538,35 @@ export default function IdentityNavigator() {
                   );
                 })}
               </svg>
+<<<<<<< HEAD
+
+              {/* NEW: avatar swaps based on leading archetype */}
+              <img
+                src={
+                  topArchetype.key === "angel"
+                    ? ZenIcon
+                    : topArchetype.key === "nave" // “evil”
+                    ? EvilIcon
+                    : ObseqIcon // “tool” → obsequious (penguin)
+                }
+                alt={
+                  topArchetype.key === "angel"
+                    ? "zen angel"
+                    : topArchetype.key === "nave"
+                    ? "evil"
+                    : "obsequious"
+                }
+                className="relative z-10 w-28 h-28 object-contain select-none"
+                draggable={false}
+              />
+
+              {/* focal context glyph (unchanged) */}
+              <div className="absolute -bottom-2 right-2 text-2xl" title="Attention focus">
+                {CONTEXTS.find((c) => c.key === active)?.icon}
+              </div>
+            </div>
+
+=======
               <div
                 className="absolute inset-0 rounded-full border border-[color:var(--accent)]/35"
                 style={{ opacity: precision * 0.75 }}
@@ -507,6 +578,7 @@ export default function IdentityNavigator() {
               </div>
             </div>
 
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
             <div className="w-full space-y-2">
               {LOADOUT.map((item) => {
                 const live = item.contexts.some((ctx) => (attention[ctx] ?? 0) > 0);
@@ -533,6 +605,79 @@ export default function IdentityNavigator() {
               <div>Precision α: <strong>{precision.toFixed(2)}</strong></div>
               <div>Levels: <strong>{level}</strong></div>
               <div>Myopia: <strong>{myopia ? "on" : "off"}</strong></div>
+<<<<<<< HEAD
+            
+              <div className="mt-4 w-full">
+                <h4 className="text-sm uppercase tracking-[0.2em] text-[var(--accentSoft)] mb-2">
+                  Active attention by context
+                </h4>
+                <div className="space-y-3">
+                  {CONTEXTS.map((ctx) => {
+                    const value = attention[ctx.key] ?? 0;
+                    return (
+                      <div
+                        key={ctx.key}
+                        className={`rounded-lg border border-white/10 px-3 py-2 ${ctx.key === active ? "bg-black/30" : "bg-black/10"}`}
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <div className="flex items-center gap-2 text-sm text-[#f7f4f2]">
+                            <span aria-hidden>{ctx.icon}</span>
+                            {ctx.label}
+                          </div>
+                          <div className="flex items-center gap-1">
+                            {[1, 2, 3].map((n) => (
+                              <button
+                                key={n}
+                                className={`attention-button ${value === n ? "attention-button--active" : ""}`}
+                                onClick={() => handleAttentionChange(ctx.key, n)}
+                                type="button"
+                              >
+                                {n}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Personal / Ego (s^1) */}
+              <div className="mt-6 w-full">
+                <h4 className="text-sm uppercase tracking-[0.2em] text-[var(--accentSoft)] mb-2">
+                  Personal / Ego <span className="opacity-70">(s^(1))</span>
+                </h4>
+
+                <div className="rounded-lg border border-white/10 p-3 bg-black/10 space-y-3">
+                  <div className="flex items-center gap-3">
+                    <span className="text-sm text-[#f7f4f2] min-w-24">Ego salience</span>
+                    <input
+                      type="range"
+                      min={0}
+                      max={1}
+                      step={0.01}
+                      value={egoSalience}
+                      onChange={(e) => setEgoSalience(parseFloat(e.target.value))}
+                      className="flex-1"
+                    />
+                    <span className="text-xs text-[#bdb5af] w-10 text-right">{egoSalience.toFixed(2)}</span>
+                  </div>
+
+                  <div>
+                    <label className="text-sm text-[#f7f4f2] block mb-1">Note to self</label>
+                    <textarea
+                      value={egoNote}
+                      onChange={(e) => setEgoNote(e.target.value)}
+                      placeholder="short private cue (kept local)"
+                      className="w-full h-20 rounded-md bg-black/30 border border-white/10 p-2 text-sm"
+                    />
+                  </div>
+                </div>
+              </div>
+
+=======
+>>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
             </div>
           </div>
         </aside>
