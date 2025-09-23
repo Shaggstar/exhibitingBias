@@ -127,7 +127,6 @@ export const REF_INDEX: Record<string, ReferenceRecord> = {
   },
 };
 
-<<<<<<< HEAD
 export type PathwayNode = {
   id: string;
   label: string;
@@ -524,6 +523,4 @@ export const PATHWAYS_DATA: { nodes: PathwayNode[]; links: PathwayLink[] } = {
   ],
 };
 
-=======
->>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
 export default REF_INDEX;

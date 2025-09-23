@@ -1,27 +1,30 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import POMDPMatrix from "../components/POMDPMatrix";
 
-const PDF_SRC = "/docs/Goals-and-POMDP-Elements.pdf"; // ensure the PDF lives in public/docs/
+const PDF_SRC = "/docs/Goals-and-POMDP-Elements.pdf";
 
-export default function GoalsPOMDP() {
+type GoalsPOMDPProps = {
+  embedded?: boolean;
+};
+
+export default function GoalsPOMDP({ embedded = false }: GoalsPOMDPProps) {
   const [open, setOpen] = useState(false);
 
   const brief = useMemo(
     () => (
       <div className="space-y-2 text-sm text-[color:var(--text)]/90">
         <p>
-          <strong>Simulation focus:</strong> Myth of Objectivity under TMS with a cultural-precision (α) control that
-          scales across contexts.
+          <strong>What it tests:</strong> MOH under TMS via a cultural-precision (α) control that scales across contexts.
         </p>
-        <ul className="list-disc ml-5 space-y-1">
+        <ul className="ml-5 list-disc space-y-1">
           <li>
-            <em>New Human Narrative:</em> egalitarian → archetypes; roles stabilize through sanction / approval cycles.
+            <em>New Human Narrative:</em> egalitarian → archetypes (roles stabilize via sanction / approval).
           </li>
           <li>
-            <em>Morals → Symbols:</em> moral modeling scaffolds symbolic/semiotic modeling; depth versus shallow models.
+            <em>Morals → Symbols:</em> moral modeling scaffolds symbolic / semiotic modeling; depth vs. shallow models.
           </li>
           <li>
-            <em>Governance / AGI:</em> α acts as an explicit governance parameter; dynamic, non-reductive control.
+            <em>Governance / AGI:</em> α as explicit governance parameter; dynamic, non-reductive control.
           </li>
         </ul>
       </div>
@@ -29,34 +32,64 @@ export default function GoalsPOMDP() {
     []
   );
 
-  return (
-    <section id="goals-pomdp" className="section">
-      <h2 className="section-title">Goals &amp; POMDP Elements</h2>
+  const Wrapper = embedded ? "div" : "section";
+  const wrapperProps = {
+    id: "goals-pomdp",
+    className: embedded ? "space-y-4" : "section",
+  } as const;
 
-      <div className="rounded-xl border border-white/10 bg-black/30 p-4">
+  return (
+    <Wrapper {...wrapperProps}>
+      {!embedded && <h2 className="section-title">Multi Agent Sim Goals &amp; Core (POMDP) Elements</h2>}
+
+      <div className="rounded-2xl border border-white/12 bg-black/30 p-6 space-y-4">
+        {embedded && (
+          <header className="space-y-1">
+            <h3 className="text-lg font-semibold text-[color:var(--text)]">
+              Multi Agent Sim Goals &amp; Core (POMDP) Elements
+            </h3>
+            <p className="text-xs text-[color:var(--accentSoft)]">
+              Expand for the full PDF spec and the ABDE quick-view table.
+            </p>
+          </header>
+        )}
+
         {brief}
 
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="mt-3 px-3 py-1.5 text-sm rounded-lg border border-white/10 bg-white/5 hover:bg-white/10"
-          aria-expanded={open}
-        >
-          {open ? "Hide full spec" : "Show full spec (PDF embed)"}
-        </button>
+        <div className="flex flex-wrap items-center gap-3 pt-1">
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            className="rounded-full border border-[var(--accentSoft)] px-3 py-1.5 text-sm text-[var(--accent)] transition hover:bg-[var(--accent)] hover:text-black"
+            aria-expanded={open}
+          >
+            {open ? "Hide embedded spec" : "Show full spec (PDF embed)"}
+          </button>
+
+          <a
+            href={PDF_SRC}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-[var(--accent)] px-3 py-1.5 text-sm font-medium text-black transition hover:opacity-90"
+          >
+            Open PDF in new tab
+          </a>
+        </div>
 
         {open && (
-          <div className="mt-4 space-y-4">
-            <div className="aspect-[16/9] w-full rounded-lg overflow-hidden border border-white/10 bg-black/60">
-              <object data={PDF_SRC} type="application/pdf" className="w-full h-full">
-                <iframe src={PDF_SRC} title="Goals &amp; POMDP Elements" className="w-full h-full" />
-              </object>
+          <div className="space-y-4 pt-2">
+            <div className="overflow-hidden rounded-xl border border-white/10 bg-black/60">
+              <iframe
+                src={PDF_SRC}
+                title="Goals &amp; POMDP Elements PDF"
+                className="h-[70vh] w-full"
+              />
             </div>
 
             <POMDPMatrix />
           </div>
         )}
       </div>
-    </section>
+    </Wrapper>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import katex from "katex";
 import "katex/dist/katex.min.css";
+import GoalsPOMDP from "../sections/GoalsPOMDP";
 
 function KaTeXBlock({ expression, display = true }: { expression: string; display?: boolean }) {
   const html = React.useMemo(
@@ -127,6 +128,7 @@ export default function TMSDetails() {
             </a>
           </div>
         </div>
+        <GoalsPOMDP embedded />
       </div>
     </section>
   );

@@ -21,6 +21,17 @@ group: Thermodynamics
 ---
 
 ---
+id: null_hypothesis
+label: Null Hypothesis (Reductionism)
+researchers: "Methodological Baseline"
+hover: "Single-cause explanations that strip context; the baseline we have to disconfirm."
+cite: "Platt (1964). Strong inference; Feyerabend (1975). Against Method."
+link: ""
+axis: Culture
+group: Methodology
+---
+
+---
 id: homo_economicus
 label: Homo Economicus (Utility Agent)
 researchers: "M. Friedman"
@@ -250,7 +261,6 @@ link: ""
 axis: Governance
 group: Synthesis
 ---
-<<<<<<< HEAD
 
 ---
 id: dual_modes_attention
@@ -339,5 +349,3 @@ link: "#goals-pomdp"
 axis: Governance
 group: Spec
 ---
-=======
->>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd

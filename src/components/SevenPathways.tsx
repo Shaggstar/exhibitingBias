@@ -24,11 +24,7 @@ type PathwayChart = {
 const PATHWAYS: PathwayChart[] = [
   {
     id: "p-evolution",
-<<<<<<< HEAD
     title: "1. Evolution of Identity",
-=======
-    title: "1. Evolution",
->>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
     markdown: pathway1,
     chart: `graph TD\n  Accent["Accent / Shibboleth"] --> Morality["Innate Morality"]\n  Morality --> Culture["Cultural Learning"]\n  Culture --> Governance["Institutions / Governance"]\n  Governance -.-> Culture`,
     tooltips: {
@@ -56,40 +52,22 @@ const PATHWAYS: PathwayChart[] = [
     id: "p-multiple-nulls",
     title: "3. Multiple Null Hypotheses",
     markdown: pathway3,
-<<<<<<< HEAD
-    chart: `flowchart TB\n  subgraph Reductive["Reductive Frames"]\n    Econ["Homo Economicus"]\n    Gene["Selfish Gene"]\n    Eq["Single Equilibrium"]\n    Stim["Stimulus → Response"]\n    Binary["Binary Opposition"]\n  end\n  Econ --> Firms["Coase: Why Firms?"]\n  Econ --> WeId["Simon: 'We' Identification"]\n  Econ --> NarrativeSum["Narrative/Scenario Analysis"]\n  Econ --> Coop["Curry: Morality = Cooperation"]\n  Econ -.-> Rockefeller["Rockefeller: Cooperation"]\n  Econ -.-> Morgan["Morgan: Character > Collateral"]\n  Gene --> Rel["Biological Relativity"]\n  Eq --> Steady["Non-equilibrium Steady States"]\n  Stim --> Emotion["Emotion as Intervening State"]\n  Emotion --> FeltSelf["Affect → Felt Self"]\n  Binary --> Diff["Différance"]\n  NarrativeSum --> Stewardship["Narrative Stewardship"]`,
-    tooltips: {
-      "Reductive Frames": "Baseline models that flatten complex agents into single variables.",
-      "Homo Economicus": "Assumes isolated rational actors.",
-      "Selfish Gene": "Frames evolution as lone competition.",
-      "Single Equilibrium": "Treats systems as static.",
-      "Stimulus → Response": "Behavior as simple input/output chain.",
-      "Binary Opposition": "Culture framed as rigid dualities.",
-      "Coase: Why Firms?": "Firms arise when price signals can't handle coordination costs.",
-      "Simon: 'We' Identification": "Collective pronouns define organizational goals.",
-      "Narrative/Scenario Analysis": "Narrative frames illuminate choices under radical uncertainty.",
-      "Curry: Morality = Cooperation": "Morality solves recurring cooperation problems.",
-      "Rockefeller: Cooperation": "Rockefeller reframed trusts as cooperative stewardship.",
-      "Morgan: Character > Collateral": "JP Morgan lent on moral character more than collateral.",
-      "Biological Relativity": "Causation flows across biological scales.",
-      "Non-equilibrium Steady States": "Agents remain organized in changing niches.",
-      "Emotion as Intervening State": "Internal states flex stimulus-response links.",
-      "Affect → Felt Self": "Feelings knit disparate processes into a self.",
-      "Différance": "Meaning arises from differences—not fixed binaries.",
-      "Narrative Stewardship": "Narratives steward shared futures through care."
-=======
-    chart: `flowchart LR\n  Null[["Null Hypothesis"]] -->|assumes| Econ["Homo Economicus"]\n  Null --> Gene["Selfish Gene"]\n  Null --> Eq["Single Equilibrium"]\n  Econ --> Firms["Firms + 'We' identity"]\n  Gene --> Rel["Biological Relativity"]\n  Eq --> Steady["Non-equilibrium Steady States"]\n  Econ --> NarrativeSum["Narrative Scenario Analysis"]\n  NarrativeSum --> Stewardship["Living Stewardship"]`,
+    chart: `flowchart LR\n  Null[["Null Hypothesis"]] -->|assumes| Econ["Homo Economicus"]\n  Null --> Gene["Selfish Gene"]\n  Null --> Eq["Single Equilibrium"]\n  Null --> Binary["Structuralism / Binary Opposition"]\n  Binary --> Derrida["Transcendental Signified (WEIRD)"]\n  Econ --> Firms["Firms + 'We' identity"]\n  Econ --> NarrativeSum["Narrative / Scenario Analysis"]\n  Econ --> Coop["Morality = Cooperation"]\n  Gene --> Rel["Biological Relativity"]\n  Eq --> Steady["Non-equilibrium Steady States"]\n  Gene --> Emotion["Emotion as Intervening State"]\n  Emotion --> FeltSelf["Affect → Felt Self"]\n  Binary --> Diff["Différance"]`,
     tooltips: {
       "Null Hypothesis": "Reductionist baselines that over simplify behaviour.",
       "Homo Economicus": "Assumes isolated rational actors.",
       "Selfish Gene": "Frames evolution as lone competition.",
       "Single Equilibrium": "Treats systems as static.",
-      "Firms + 'We' identity": "Collective identities emerge even in firms.",
-      "Biological Relativity": "Multi scale causation in biology.",
-      "Non-equilibrium Steady States": "Keeps organisms adaptive.",
-      "Narrative Scenario Analysis": "Brings plural models to decisions.",
-      "Living Stewardship": "Reframes governance as care."
->>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
+      "Structuralism / Binary Opposition": "Structuralism constructs meaning through opposing pairs.",
+      "Transcendental Signified (WEIRD)": "Derrida critiques a single universal anchor of meaning.",
+      "Firms + 'We' identity": "Collective identities emerge even inside firms.",
+      "Narrative / Scenario Analysis": "Narrative frames illuminate choices under radical uncertainty.",
+      "Morality = Cooperation": "Morality solves recurring cooperation problems (Curry).",
+      "Biological Relativity": "Causation flows across biological scales.",
+      "Non-equilibrium Steady States": "Keeps organisms adaptive in changing niches.",
+      "Emotion as Intervening State": "Internal states flex stimulus-response links.",
+      "Affect → Felt Self": "Feelings knit disparate processes into a coherent self.",
+      "Différance": "Meaning arises through differences—not fixed binaries."
     },
     hint: "Reductionist baselines challenged by multi-level constraints."
   },

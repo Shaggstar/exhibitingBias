@@ -29,7 +29,6 @@ export default function ProductsSection() {
     <section id="products" className="section">
       <h2 className="section-title">{title}</h2>
       <div className="mx-auto max-w-3xl rounded-2xl border border-white/10 bg-black/25 p-6 text-[var(--subtext)]">
-<<<<<<< HEAD
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
@@ -41,22 +40,12 @@ export default function ProductsSection() {
             ),
             h3: ({ node, ...props }) => (
               <h3 className="mt-6 text-lg font-semibold text-[var(--text)]" {...props} />
-=======
-        <ReactMarkdown remarkPlugins={[remarkGfm]}
-          components={{
-            a: ({ node, ...props }) => (
-              <a className="text-[var(--accent)] underline underline-offset-4" {...props} />
-            ),
-            h3: ({ node, ...props }) => (
-              <h3 className="mt-6 text-xl font-semibold text-[var(--text)]" {...props} />
->>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
             ),
             p: ({ node, ...props }) => (
               <p className="mt-4 leading-relaxed" {...props} />
             ),
             ul: ({ node, ...props }) => (
               <ul className="mt-4 list-disc space-y-2 pl-6" {...props} />
-<<<<<<< HEAD
             ),
             ol: ({ node, ...props }) => (
               <ol className="mt-4 list-decimal space-y-2 pl-6" {...props} />
@@ -66,8 +55,6 @@ export default function ProductsSection() {
             ),
             a: ({ node, ...props }) => (
               <a className="text-[var(--accent)] underline underline-offset-4" {...props} />
-=======
->>>>>>> d7a1c7216b4ad06f253d0460a60ce8f224b65cdd
             )
           }}
         >
