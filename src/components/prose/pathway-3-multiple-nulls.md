@@ -1,16 +1,18 @@
 
 
-The Author Dostoevsky knew the perils of apply our reductive tendency towards morality. This applies to both utilitarianism and deontology, the two dominant schools in Western Philosophy. Worst still, is the tendency to supplant moral thinking with science: 
+The Author Dostoevsky knew the perils of attempting to apply WEIRD analytically oriented reductive tendencies towards morality. This applies to both utilitarianism and deontology, the two dominant schools in Western Philosophy. Worst still, is the tendency to supplant moral thinking with science: 
 
-Pyotr Petrovitch: 
+# Pyotr Petrovitch: 
 
 > Science now tells us, love yourself before all men, for everything in the world rests on self-interest…firmer are its foundations and the better is the common welfare organized too. Therefore, in acquiring wealth solely and exclusively for myself, I am acquiring, so to speak, for all…
 
-Raskolnikov:
+# Raskolnikov:
 
-> [...] carry out logically [this] theory… and it follows that people may be killed…"
+> [...] carry out logically [this] theory… and it follows that **people may be killed**…"
 
 ~ Dostoevsky in  Crime and Punishment
+
+Spoiler alert (!) but Raskolnikov goes on to murder his land lady because he feels himself of Napoleonic greatness and worldly consequence, murder being of course a mere pittance of cost versus his moral benefit according to his utilitarian logic. 
 
 The WEIRD, or Western analytically bias gives a certain culmination towards Reductionism, the causal attribution of complex phenomenon to their lowest level components. I argue that this dark side nonetheless opens a door to the meta-layer of the scientific understanding of life, i.e. agents ARE statistical modelers. Sometimes reductive but necessarily are parsimonious. Agents need to model their environment not do a single casual factors, but neither can they model each potential factor. Like a good scientists they need to form a model of the environment using the right amount of variables, such that the casual representations are not redundant or superfluous.  These insights span from economics, to biology, to emotions, even to language and human culture. 
 
