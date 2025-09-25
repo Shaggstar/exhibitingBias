@@ -89,10 +89,10 @@ function LinkList({ title, items }: { title: string; items: { title: string; hre
 export default function SubstackShowcase() {
   return (
     <div className="rounded-2xl border border-white/10 bg-black/25 p-6 space-y-6">
-      <h3 className="text-xl font-semibold text-[var(--text)]">Signal Boost</h3>
+      <h3 className="text-xl font-semibold text-[var(--text)]">Signaling MySelf in the Age of Artifice</h3>
       <p className="text-sm text-[var(--subtext)]">
-        Essays and notes that expand on the Myth of Objectivity, cultural cognition, and why morality is
-        a practical operating system for alignment.
+        These essays and notes expand on the Myth of Objectivity, cultural cognition, and why morality is
+        a practical operating system for alignment. Additionally they 
       </p>
       <div className="grid gap-6 md:grid-cols-2">
         <LinkList title="Prose" items={proseLinks} />
