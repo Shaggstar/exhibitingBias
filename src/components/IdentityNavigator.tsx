@@ -1,12 +1,14 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import * as d3 from "d3";
 
-// NEW: avatar images
-import EvilIcon from "../assets/evil-icon.png";
-import ZenIcon from "../assets/zen.png";
-import ObseqIcon from "../assets/obsequious.webp";
+// Avatar illustrations (emoji-inspired trio)
+import AvatarTool from "../assets/avatar-tool.png";
+import AvatarDevil from "../assets/avatar-devil.png";
+import AvatarAngel from "../assets/avatar-angel.png";
 
 type ContextKey = "family" | "professional" | "public" | "misc1" | "misc2" | "misc3";
+
+type ArchetypeKey = "angel" | "tool" | "nave";
 
 type MiniNode = {
   id: string;
@@ -376,7 +378,9 @@ export default function IdentityNavigator() {
         </div>
 
         <aside className="pathway-container" style={{ background: "rgba(15,15,20,.85)" }}>
-          <h3 className="text-lg font-semibold text-[color:var(--accent)] mb-3">Avatar signal</h3>
+          <h3 className="text-lg font-semibold text-[color:var(--accent)] mb-3">
+            Avatar signal: {topArchetype.label}
+          </h3>
 
           <div className="flex flex-col items-center gap-4">
             <div className="relative w-44 h-44 flex items-center justify-center">
@@ -402,21 +406,21 @@ export default function IdentityNavigator() {
                 })}
               </svg>
 
-              {/* NEW: avatar swaps based on leading archetype */}
+              {/* Avatar swaps based on leading archetype */}
               <img
                 src={
                   topArchetype.key === "angel"
-                    ? ZenIcon
-                    : topArchetype.key === "nave" // “evil”
-                    ? EvilIcon
-                    : ObseqIcon // “tool” → obsequious (penguin)
+                    ? AvatarAngel
+                    : topArchetype.key === "nave"
+                    ? AvatarDevil
+                    : AvatarTool
                 }
                 alt={
                   topArchetype.key === "angel"
                     ? "zen angel"
                     : topArchetype.key === "nave"
-                    ? "evil"
-                    : "obsequious"
+                    ? "deviant nave"
+                    : "myopic tool"
                 }
                 className="relative z-10 w-28 h-28 object-contain select-none"
                 draggable={false}

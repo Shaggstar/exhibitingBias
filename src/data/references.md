@@ -26,7 +26,7 @@ label: Null Hypothesis (Reductionism)
 researchers: "Methodological Baseline"
 hover: "Single-cause explanations that strip context; the baseline we have to disconfirm."
 cite: "Platt (1964). Strong inference; Feyerabend (1975). Against Method."
-link: ""
+link: "https://www.frontiersin.org/journals/sociology/articles/10.3389/fsoc.2023.1269621/full#s3"
 axis: Culture
 group: Methodology
 ---
@@ -48,7 +48,7 @@ label: Why Firms Exist (Coasean)
 researchers: "R. Coase"
 hover: "If markets are efficient, and agents use them to maximize individual untility (Neoclassical axiom), why do firms (bureaucratic, political structures) exist?"
 cite: "Coase, R. H. (1937). The Nature of the Firm. Economica."
-link: ""
+link: "https://en.wikipedia.org/wiki/Market_failure#Coase_theorem"
 axis: Culture
 group: Economics
 ---
@@ -57,9 +57,9 @@ group: Economics
 id: simon_we
 label: Identification & “We”
 researchers: "H. A. Simon"
-hover: "Employees perceive the organization's goals as their goals—‘We’ defines decision frames."
+hover: "[Employees] perceive the organization's goals as their goals - which is precisely what identification means. "We" and "they" are fundamentally important pronouns in the language, and an individual's conception (varying from one time to another) of who "we" are defines his or her frame of reference inmaking decisions."
 cite: "Simon, H. A. (1992). Altruism and Economics. Eastern Economic Journal."
-link: ""
+link: "https://iiif.library.cmu.edu/file/Simon_box00069_fld05365_bdl0001_doc0001/Simon_box00069_fld05365_bdl0001_doc0001.pdf"
 axis: Governance
 group: Institutions
 ---
@@ -70,7 +70,7 @@ label: Narrative / Scenario Analysis
 researchers: "W. Fisher; J. Kay & M. King"
 hover: "Humans frame decisions as narratives; strategy under uncertainty is better told as stories."
 cite: "Kay & King (2020). Radical Uncertainty. Norton."
-link: ""
+link: "https://www.amazon.com/Radical-Uncertainty-Decision-Making-Beyond-Numbers/dp/1324004770"
 axis: Culture
 group: Decision
 ---
@@ -81,7 +81,7 @@ label: Institutions Reduce Uncertainty
 researchers: "D. C. North"
 hover: "Institutions stabilize interactions; constraints we impose on ourselves."
 cite: "North, D. C. (1990). Institutions... Cambridge."
-link: ""
+link: "https://www.aeaweb.org/articles?id=10.1257/jep.5.1.97"
 axis: Governance
 group: Institutions
 ---
@@ -92,7 +92,7 @@ label: Binary Opposition
 researchers: "C. Lévi-Strauss"
 hover: "Culture structured via binary oppositions (raw/cooked; nature/culture)."
 cite: "Lévi-Strauss (1963). Structural Anthropology. Basic Books."
-link: ""
+link: "https://en.wikipedia.org/wiki/Binary_opposition#Theory_of_binaries"
 axis: Culture
 group: Structuralism
 ---
@@ -101,9 +101,9 @@ group: Structuralism
 id: differance
 label: Différance / Transcendental Signified
 researchers: "J. Derrida"
-hover: "No sign functions in isolation; ‘transcendental signified’ is illusory."
-cite: "Derrida (2006/1978). Writing and Difference. Routledge/Chicago."
-link: ""
+hover: "Différance is the systematic play of differences, of traces of differences, of the spacing by means of which elements are related to each other […] An element functions and signifies, takes on or conveys meaning, only by referring to another past or future element in an economy of traces […] The point at which the concept of différance, and the chain attached to it, intervenes, all the conceptual oppositions of metaphysics […] a subordination of the movement of différance in favor of the presence of a value or a meaning […] the "transcendental signified."
+cite: "(Derrida and Bass 1998, 29)"
+link: "https://www.youtube.com/watch?v=8WM0ZUgyoME&t=285s"
 axis: Culture
 group: Post-Structuralism
 ---
@@ -125,7 +125,7 @@ label: Emotion as Intervening State
 researchers: "R. Adolphs; D. J. Anderson"
 hover: "Internal emotional states disintermediate strict S–R; flexible mappings."
 cite: "Anderson (2022). The Nature of the Beast. Basic Books."
-link: ""
+link: "https://davidandersonlab.caltech.edu/"
 axis: Morality
 group: Affective Science
 ---
@@ -136,7 +136,7 @@ label: Affect → Felt Self
 researchers: "M. Solms; A. Damasio"
 hover: "Feelings harmonize disparate processes into a coherent ‘felt’ self."
 cite: "Damasio (1999). The Feeling of What Happens. Harcourt."
-link: ""
+link: "https://www.youtube.com/watch?v=JReiTufRKLk, https://en.wikipedia.org/wiki/Damasio%27s_theory_of_consciousness"
 axis: Culture
 group: Consciousness
 ---
@@ -169,7 +169,7 @@ label: Morality = Cooperation
 researchers: "O. S. Curry"
 hover: "Morality is a set of solutions to recurrent cooperation problems."
 cite: "Curry (2016). Evolution and Human Behavior, 39(2), 182–194."
-link: ""
+link: "[Moality as Coopeation](https://www.lse.ac.uk/cpnss/research/research-projects/philosophy-archive/research/previous-research/morality-as-cooperation)"
 axis: Governance
 group: Moral Theory
 ---
@@ -180,7 +180,7 @@ label: Accent Bias / Shibboleth
 researchers: "M. Moffett; E. Cohen"
 hover: "Accent as anonymous identity marker; scales cooperation beyond intimates."
 cite: "Moffett (2019). The Human Swarm. Basic Books."
-link: ""
+link: "https://www.youtube.com/watch?v=GRapcBGJjvQ""
 axis: Accent
 group: Cultural Evo
 ---
