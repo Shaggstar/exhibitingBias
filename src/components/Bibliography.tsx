@@ -8,11 +8,10 @@ export default function Bibliography() {
   return (
     <section id="bibliography" className="section">
       <div className="mx-auto max-w-3xl space-y-6">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <h2 className="section-title sm:mb-0">Bibliography</h2>
+        <div className="flex justify-center">
           <button
             onClick={() => setExpanded((prev) => !prev)}
-            className="inline-flex items-center gap-2 self-start rounded-full border border-[#FF6A3D55] px-4 py-2 text-sm font-medium text-[#FF6A3D] transition hover:bg-[#FF6A3D] hover:text-black"
+            className="inline-flex items-center gap-2 rounded-full border border-[#FF6A3D55] px-5 py-2 text-sm font-medium text-[#FF6A3D] transition hover:bg-[#FF6A3D] hover:text-black"
             aria-expanded={expanded}
             aria-controls="bibliography-list"
           >

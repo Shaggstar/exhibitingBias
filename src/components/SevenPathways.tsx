@@ -52,7 +52,7 @@ const PATHWAYS: PathwayChart[] = [
     id: "p-multiple-nulls",
     title: "3. Multiple Null Hypotheses",
     markdown: pathway3,
-    chart: `flowchart LR\n  Null[["Null Hypothesis"]] -->|assumes| Econ["Homo Economicus"]\n  Null --> Gene["Selfish Gene"]\n  Null --> Eq["Single Equilibrium"]\n  Null --> Binary["Structuralism / Binary Opposition"]\n  Binary --> Derrida["Transcendental Signified (WEIRD)"]\n  Econ --> Firms["Firms + 'We' identity"]\n  Econ --> NarrativeSum["Narrative / Scenario Analysis"]\n  Econ --> Coop["Morality = Cooperation"]\n  Gene --> Rel["Biological Relativity"]\n  Eq --> Steady["Non-equilibrium Steady States"]\n  Gene --> Emotion["Emotion as Intervening State"]\n  Emotion --> FeltSelf["Affect → Felt Self"]\n  Binary --> Diff["Différance"]`,
+    chart: `flowchart LR\n  Null[["Null Hypothesis"]] -->|assumes| Econ["Homo Economicus"]\n  Null --> Gene["Selfish Gene"]\n  Null --> Eq["Single Equilibrium"]\n  Null --> Binary["Structuralism / Binary Opposition"]\n  Binary --> Derrida["Transcendental Signified (WEIRD)"]\n  Derrida --> NomadSignified["Transcendental Signified (Nomadic Hunter-Gatherers)"]\n  Econ --> Firms["Firms + 'We' identity"]\n  Econ --> NarrativeSum["Narrative / Scenario Analysis"]\n  Econ --> Coop["Morality = Cooperation"]\n  Gene --> Rel["Biological Relativity"]\n  Eq --> Steady["Non-equilibrium Steady States"]\n  Gene --> Emotion["Emotion as Intervening State"]\n  Emotion --> FeltSelf["Affect → Felt Self"]\n  Binary --> Diff["Différance"]`,
     tooltips: {
       "Null Hypothesis": "Reductionist baselines that over simplify behaviour.",
       "Homo Economicus": "Assumes isolated rational actors.",
@@ -60,6 +60,7 @@ const PATHWAYS: PathwayChart[] = [
       "Single Equilibrium": "Treats systems as static.",
       "Structuralism / Binary Opposition": "Structuralism constructs meaning through opposing pairs.",
       "Transcendental Signified (WEIRD)": "Derrida critiques a single universal anchor of meaning.",
+      "Transcendental Signified (Nomadic Hunter-Gatherers)": "Nomadic frames keep meaning itinerant—no fixed signified.",
       "Firms + 'We' identity": "Collective identities emerge even inside firms.",
       "Narrative / Scenario Analysis": "Narrative frames illuminate choices under radical uncertainty.",
       "Morality = Cooperation": "Morality solves recurring cooperation problems (Curry).",

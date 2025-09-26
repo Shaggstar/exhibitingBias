@@ -210,6 +210,34 @@ function ConceptualAtlas() {
     const simLinks = graphLinks.map((link) => ({ ...link }));
 
     const margin = 28;
+    const uniquePathways = Array.from(new Set(simNodes.map((node) => node.pathway ?? 0))).sort(
+      (a, b) => a - b
+    );
+    const columnCount = uniquePathways.length || 1;
+    const pathwayColumns = new Map(uniquePathways.map((pathway, index) => [pathway, index]));
+
+    const horizontalTarget = (node: any) => {
+      const columnIndex = pathwayColumns.get(node.pathway ?? 0) ?? 0;
+      if (columnCount === 1) return width / 2;
+      const usableWidth = width - margin * 2;
+      const fraction = columnIndex / Math.max(1, columnCount - 1);
+      return margin + usableWidth * fraction;
+    };
+
+    const radialTargets = new Map(
+      uniquePathways.map((pathway, index) => {
+        const step = Math.max(140, Math.min(height / 2.4, 160 + index * 35));
+        return [pathway, step];
+      })
+    );
+    const radialForce = d3
+      .forceRadial(
+        (d: any) => radialTargets.get(d.pathway ?? 0) ?? Math.min(width, height) / 3.2,
+        width / 2,
+        height / 2
+      )
+      .strength(0.055 + 0.01 * Math.max(0, columnCount - 1));
+
     const simulation = d3
       .forceSimulation(simNodes as any)
       .force(
@@ -217,13 +245,14 @@ function ConceptualAtlas() {
         d3
           .forceLink(simLinks as any)
           .id((d: any) => d.id)
-          .distance(140)
-          .strength(0.5)
+          .distance(150)
+          .strength(0.55)
       )
-      .force("charge", d3.forceManyBody().strength(-220))
-      .force("collide", d3.forceCollide().radius(24).iterations(2))
-      .force("x", d3.forceX(width / 2).strength(0.05))
-      .force("y", d3.forceY(height / 2).strength(0.05))
+      .force("charge", d3.forceManyBody().strength(-235))
+      .force("collide", d3.forceCollide().radius(26).iterations(2))
+      .force("x", d3.forceX(horizontalTarget).strength(0.04 + 0.02 * Math.max(0, columnCount - 1)))
+      .force("y", d3.forceY(height / 2).strength(0.022))
+      .force("radial", radialForce)
       .alphaDecay(0.03);
 
     const linkSelection = svg
