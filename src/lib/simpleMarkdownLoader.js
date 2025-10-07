@@ -27,6 +27,7 @@ const markdownFiles = {
   "essays/Activating the Cultural Perspective": () => import("../content/essays/Activating the Cultural Perspective.md?raw"),
   "essays/Finding Our Place in the Age of Robot Gods": () => import("../content/essays/Finding Our Place in the Age of Robot Gods.md?raw"),
   "essays/From Bias to Symbols to Natively Aligned AGI": () => import("../content/essays/From Bias to Symbols to Natively Aligned AGI.md?raw"),
+  "essays/Godness and Numinous Materials": () => import("../content/essays/Godness and Numinous Materials.md?raw"),
   "essays/Moral Case for building AGI with Morality": () => import("../content/essays/Moral Case for building AGI with Morality.md?raw"),
   "essays/Thoughts for my Penny": () => import("../content/essays/Thoughts for my Penny.md?raw"),
   
