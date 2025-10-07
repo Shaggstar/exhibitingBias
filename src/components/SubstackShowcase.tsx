@@ -2,6 +2,10 @@ import React from "react";
 
 const proseLinks = [
   {
+    title: "Godness and Numinous Materials",
+    href: "https://open.substack.com/pub/shaggy/p/godness-and-numinious-materials?r=36gqn&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true",
+  },
+  {
     title: "Finding Our Place in the Age of Robot Gods",
     href: "https://shaggy.substack.com/p/finding-our-place-in-the-age-of-robot",
   },
