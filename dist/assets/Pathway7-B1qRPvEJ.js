@@ -1,1 +1,0 @@
-import{j as r,M as a,f as e,r as s}from"./index-DbP7lxRM.js";function t(){return r.jsx("article",{className:"prose prose-invert max-w-none",children:r.jsx(a,{remarkPlugins:[s],children:e})})}export{t as default};
